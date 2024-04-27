@@ -24,13 +24,13 @@ export SUDO_PROMPT="$(tput setab 1 setaf 0 bold)[sudo]$(tput sgr0) $(tput setaf 
 sh /etc/profile.d/figurine.sh
 
 # batcat theme.
-export BAT_THEME="ansi-dark"
+#export BAT_THEME="ansi-dark"
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
 # Use ripgrep for fzf and show hidden files
-export FZF_DEFAULT_COMMAND='rg --files --no-ignore-vcs --hidden'
+#export FZF_DEFAULT_COMMAND='rg --files --no-ignore-vcs --hidden'
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -111,7 +111,7 @@ source $ZSH/oh-my-zsh.sh
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
 # else
-#   export EDITOR='mvim'
+#   export EDITOR='nvim'
 # fi
 
 # Compilation flags
@@ -147,6 +147,9 @@ source ~/.zsh_aliases
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
+
+# fzf manual install
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Set up fzf key bindings and fuzzy completion
 eval "$(fzf --zsh)"
