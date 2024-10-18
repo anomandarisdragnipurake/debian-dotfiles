@@ -18,6 +18,13 @@ compinit -d $HOME/.config/zsh/.zcompdump
 # Example to use figlet in vim
 # figlet .vimrc | sed -n 's/^.*/"   &/p'
 
+# append
+path+=('$HOME/.local/bin')
+# or prepend
+# path=('/home/david/pear/bin' $path)
+# export to sub-processes (make it inherited by child processes)
+export PATH
+
 # Colourful sudo prompt
 export SUDO_PROMPT="$(tput setab 1 setaf 0 bold)[sudo]$(tput sgr0) $(tput setaf 6)password for$(tput sgr0) $(tput setaf 5)%p$(tput sgr0): "
 
