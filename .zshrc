@@ -149,6 +149,7 @@ alias rm="rm -i"
 alias dip="docker image prune"
 alias dtail='docker logs -tf --tail='50' '
 alias v="nvim"
+alias dockcheck="$USER/.local/bin/dockcheck.sh"
 
 source ~/.zsh_aliases
 
